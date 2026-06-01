@@ -583,7 +583,7 @@ fun App(m: ButterscotchPreprocessorWeb) {
                     else -> 16
                 }
 
-                val elfBytes = customElfBytes ?: fetchResourceBytes("/assets/ps2/butterscotch-bc$validBytecodeVersion.elf?v=${Date.now()}")
+                val elfBytes = customElfBytes ?: fetchResourceBytes("/assets/ps2/butterscotch-wad$validBytecodeVersion.elf?v=${Date.now()}")
 
                 // Use custom icon if provided, otherwise fetch default from resources
                 val iconBytes = customIconBytes ?: fetchResourceBytes("/assets/ps2/ICON.ICO?v=${Date.now()}")

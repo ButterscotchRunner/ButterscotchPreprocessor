@@ -16,9 +16,9 @@ import java.security.MessageDigest
 class ButterscotchPreprocessorWebServer(
     private val jsBundle: String,
     private val cssBundle: String,
-    private val butterscotchBC14Elf: ByteArray,
-    private val butterscotchBC16Elf: ByteArray,
-    private val butterscotchBC17Elf: ByteArray,
+    private val butterscotchWAD14Elf: ByteArray,
+    private val butterscotchWAD16Elf: ByteArray,
+    private val butterscotchWAD17Elf: ByteArray,
     private val iconIco: ByteArray
 ) {
     private val jsBundleHash = md5Hex(jsBundle.toByteArray())
@@ -182,23 +182,23 @@ class ButterscotchPreprocessorWebServer(
                     )
                 }
 
-                get("/assets/ps2/butterscotch-bc14.elf") {
+                get("/assets/ps2/butterscotch-wad14.elf") {
                     call.respondBytes(
-                        butterscotchBC14Elf,
+                        butterscotchWAD14Elf,
                         contentType = ContentType.Application.OctetStream
                     )
                 }
 
-                get("/assets/ps2/butterscotch-bc16.elf") {
+                get("/assets/ps2/butterscotch-wad16.elf") {
                     call.respondBytes(
-                        butterscotchBC16Elf,
+                        butterscotchWAD16Elf,
                         contentType = ContentType.Application.OctetStream
                     )
                 }
 
-                get("/assets/ps2/butterscotch-bc17.elf") {
+                get("/assets/ps2/butterscotch-wad17.elf") {
                     call.respondBytes(
-                        butterscotchBC17Elf,
+                        butterscotchWAD17Elf,
                         contentType = ContentType.Application.OctetStream
                     )
                 }
