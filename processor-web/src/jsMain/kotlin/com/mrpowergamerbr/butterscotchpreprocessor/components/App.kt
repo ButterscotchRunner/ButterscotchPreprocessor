@@ -198,8 +198,9 @@ private val DELTARUNE_CHAPTER_1_AND_2_PRESET = Preset(
     controller1Mappings = UNDERTALE_CONTROLLER_MAPPINGS,
     controller2Mappings = emptyMap(),
     filesystemMappings = mapOf(
-        "lang/lang_en.json" to "\$BOOT:LANG/LANG_EN.JSON",
+        "lang/lang_en_ch1.json" to "\$BOOT:LANG/EN_CH1.JSON",
         "lang/lang_ja.json" to "\$BOOT:LANG/LANG_JA.JSON",
+        "lang/lang_ja_ch1.json" to "\$BOOT:LANG/JA_CH1.JSON",
         "filech1_0" to "mc0:/DELTARUNE/filech1_0",
         "filech1_1" to "mc0:/DELTARUNE/filech1_1",
         "filech1_2" to "mc0:/DELTARUNE/filech1_2",
