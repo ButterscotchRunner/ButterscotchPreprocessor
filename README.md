@@ -1,6 +1,7 @@
 # Butterscotch Preprocessor
 
-Butterscotch Preprocessor converts a GameMaker `data.win` file into binary texture and audio assets for PlayStation 2 or PlayStation 3 targets.
+Butterscotch Preprocessor converts a GameMaker `data.win` file into binary
+texture and audio assets for PlayStation 2 or PlayStation 3 targets.
 
 ## Requirements
 
